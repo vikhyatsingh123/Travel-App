@@ -12,7 +12,7 @@
 ### Clone the repo
 
 ```
-git clone https://github.com/hhhrrrttt222111/TravelApp.git
+git clone
 cd TravelApp
 ```
 ### Install Server packages from the root directory
@@ -28,11 +28,10 @@ npm install
 <br>
 
 ## Usage
-### Create `dev.js` file inside `./server/config` and add your MongoDB connection string into `dev.js` file as shown below.
+### Create .env file and add your MongoDB connection string into file as shown below.
 ```
-module.exports = {
-    mongoURI: "mongodb+srv://<username>:<password>@cluster0.podra.mongodb.net/<dbname>?retryWrites=true&w=majority"
-}
+MONGO_URI = mongodb+srv://<username>:<password>@cluster0.podra.mongodb.net/<dbname>?retryWrites=true&w=majority
+
 ```
 ### Create an empty folder named `uploads` in the root directory for storing images.
 
@@ -58,13 +57,6 @@ npm run dev
  <img src="./screenshots/product.PNG" alt=""/>
 </p>
 <br> 
-
- * ### Cart Page
-<p align="center">
- <img src="./screenshots/cart.PNG" alt=""/>
-</p>
-
-<br>
 
  * ### SignIn/LogIn
 <p align="center">
